@@ -6,6 +6,7 @@
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
+/[Bb]uilds/
 
 #Unity3D Generated File On Crash Reports
 sysinfo.txt
