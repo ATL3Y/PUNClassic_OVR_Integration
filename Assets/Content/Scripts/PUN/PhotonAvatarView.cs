@@ -123,8 +123,11 @@ public class PhotonAvatarView : MonoBehaviour
 
     private bool notReadyForSerialization
     {
+        
         get
         {
+            // Utilized this if you start getting dropped messages errors. 
+            return false;
             return ( !PhotonNetwork.inRoom || ( PhotonNetwork.room.PlayerCount < 2 ) ||
                     !Oculus.Platform.Core.IsInitialized ( ) || !ovrAvatar.Initialized );
         }
